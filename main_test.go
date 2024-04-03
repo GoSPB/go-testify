@@ -18,6 +18,7 @@ func TestMainHandlerSuccess(t *testing.T) {
 
 	require.NotEmpty(t, responseRecorder.Code)
 
+	//Проверка, что статус 200
 	status := responseRecorder.Code
 	require.Equal(t, status, http.StatusOK)
 }
